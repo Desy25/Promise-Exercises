@@ -3,7 +3,7 @@ const isLogged = true;
 const isLoggedIn = (isLogged) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            if (isLogged === true) {
+            if (isLogged) {
                 resolve(Math.random());
             } else {
                 reject(new Error("Not logged in!"));
